@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>final과제</title>
+    <link rel="stylesheet" href="./final.css">
+    <script src="./final.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h3>회원가입</h3>
+        <div class="inputbox_wrapper">
+            <input class="inputbox" type="email" id="email" placeholder="이메일을 입력해 주세요.">
+            <div class="error" id="error_email"></div>
+        </div>
+        <div class="inputbox_wrapper">
+            <input class="inputbox" type="text" id="name" placeholder="이름을 입력해 주세요.">
+            <div class="error" id="error_name"></div>
+        </div>
+        <div class="inputbox_wrapper">
+            <input class="inputbox" type="password" id="pw1" placeholder="비밀번호를 입력해 주세요.">
+            <div class="error" id="error_pw1"></div>
+        </div>
+        <div class="inputbox_wrapper">
+            <input class="inputbox" type="password" id="pw2" placeholder="비밀번호를 다시 입력해 주세요.">
+            <div class="error" id="error_pw2"></div>
+        </div>
+        <div class="phone_wrapper">
+            <input type="text" class="phoneNum" id="phone1" onchange="changePhoneFocus1()" onkeyup="onchange()" maxlength="3">
+            <span>-</span>
+            <input type="text" class="phoneNum" id="phone2" onchange="changePhoneFocus2()" onkeyup="onchange()" maxlength="4">
+            <span>-</span>
+            <input type="text" class="phoneNum" id="phone3" onchange="changePhoneFocus3()" onkeyup="onchange()" maxlength="4">
+        </div>
+        <div class="token_wrapper">
+            <span class="token" id="token">000000</span>
+            <button id="token_button" disabled onclick="getToken()">인증번호 전송</button>
+        </div>
+        <div class="token_wrapper">
+            <span class="token_timer" id="token_timer">3:00</span>
+            <button id="token_timer_confirm_button" disabled onclick="getTokenTimerConfirm()">인증확인</button>
+        </div>
+        <div class="inputbox_wrapper">
+            <div class="location_wrapper">
+                <select class="location" id="location">
+                    <option value="0" selected disabled>지역을 선택하세요.</option>
+                    <option value="1">서울</option>
+                    <option value="2">경기</option>
+                    <option value="3">인천</option>
+                </select>
+            </div>
+            <div class="error" id="error_location"></div>
+        </div>
+        <div class="inputbox_wrapper">
+            <div class="gender_wrapper">
+                <div class="gender"><input type="radio" name="gender" id="gender_woman">여성</div>
+                <div class="gender"><input type="radio" name="gender" id="gender_man">남성</div>
+            </div>
+            <div class="error" id="error_gender"></div>
+        </div>
+        <div class="dividedLine"></div>
+        <div class="footer">
+            <button id="signup_button" disabled onclick="signup()">가입하기</button>
+        </div>
+    </div>
+</body>
+</html>

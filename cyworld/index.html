@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>권소현님의 미니홈피 :: 사이좋은 사람들, 싸이월드</title>
+    <!-- css -->
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/48fd7950ed.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div class="background">
+        <div class="outerbox">
+            <div class="wrapper">
+                <div class="wrapper_left">
+                    <div class="wrapper_left_header">
+                        <div class="count">
+                            TODAY&nbsp;
+                            <span class="count_today">0</span>
+                            &nbsp;| TOTAL&nbsp;
+                            <span class="count_total">12345</span>
+                        </div>
+                    </div>
+                    <div class="wrapper_left_body">
+                        <div class="left_body_header">
+                            <div class="left_body_header_picture"></div>
+                            <div class="left_body_header_line"></div>
+                        </div>
+                        <div class="left_body_profile">
+                            <div class="profile_detail">
+                                <i class="fa-solid fa-user profile_icon"></i>
+                                이름
+                            </div>
+                            <div class="profile_detail">
+                                <i class="fa-solid fa-phone profile_icon"></i>
+                                Phone
+                            </div>
+                            <div class="profile_detail">
+                                <i class="fa-solid fa-envelope profile_icon"></i>
+                                E-mail
+                            </div>
+                            <div class="profile_detail">
+                                <i class="fa-solid fa-star profile_icon"></i>
+                                인스타그램
+                            </div>
+                        </div>
+                        <div class="left_body_footer">
+                            <div class="wrapper_feel">
+                                <div class="feel_title">오늘의 기분</div>
+                                <select class="feel_select">
+                                    <option value="">기쁨 😄</option>
+                                    <option value="">슬픔 😥</option>
+                                    <option value="">화남 😡</option>
+                                    <option value="">분노 🤬</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper_right">
+                    <div class="wrapper_right_header">
+                        <div class="right_header_title">사이좋은 사람들, 싸이월드</div>
+                        <div class="right_header_set">
+                            <div class="right_header_set_detail">사생활보호설정</div>
+                            <i class="fa-solid fa-caret-right set-icon"></i>
+                        </div>
+                    </div>
+                    <div class="wrapper_right_body">
+                        <iframe id="contentFrame" src="./home.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <div class="navigation_item" id="menuHome" onclick="menuHome()">홈</div>
+                    <div class="navigation_item" id="menuJukebox" onclick="menuJukebox()">쥬크박스</div>
+                    <div class="navigation_item" id="menuGame" onclick="menuGame()">게임</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

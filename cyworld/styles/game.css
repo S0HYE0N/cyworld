@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrapper_header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #55b2d4;
+}
+.subtitle {
+    font-size: 8px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+.divideLine {
+    width: 100%;
+    border-top: 1px solid #999;
+}
+.game_container {
+    width: 222px;
+    height: 168px;
+    border: 1px solid #999;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f6f6f6;
+}
+.game_title {
+    font-size: 15px;
+    font-weight: 900;
+}
+.game_subtitle {
+    font-size: 11px;
+}
+.word_result {
+    font-size: 11px;
+    font-weight: 700;
+}
+.word_text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.textbox {
+    width: 130px;
+    height: 24px;
+    border-radius: 5px;
+}
+.search {
+    font-size: 11px;
+    font-weight: 700;
+    width: 38px;
+    height: 24px;
+}
+
+.game_lotto_number {
+    width: 130px;
+    height: 21px;
+    border: 1px solid #000;
+    background-color: #ffe400;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 8px;
+    margin: 10px 0 11px 0;
+}
+.game_lotto_button {
+    font-size: 11px;
+    font-weight: 700;
+    width: 62px;
+    height: 24px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+}

@@ -1,0 +1,38 @@
+* { 
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 450px;
+    margin: 0px auto;
+    background-color: #fff;
+}
+.textbox {
+    width: 450px;
+    height: 40px;
+    padding: 8px;
+    margin: 4px 0;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 4px;
+}
+.radio-group {
+    width: 450px;
+    text-align: center;
+    padding: 16px 0;
+}
+h2 {
+    text-align: center;
+}
+input[type="checkbox"] {
+    float: left;
+}
+input[type="checkbox"] + label { 
+    display: block;
+    padding-left: 25px;
+}
+button {
+    width: 450px;
+    height: 40px;
+    color: #fff;
+    border-style: none;
+}
